@@ -1,24 +1,11 @@
-# README
+# Kubernetes-sample
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample repo where I play around Kubernetes with a simple Rails application on Docker container.
 
-Things you may want to cover:
+## Set up
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+$ docker build -f .docker/app/Dockerfile . -t k8s-sample
+$ docker run -itd --name k8s-sample-container -v `pwd`:/kubernetes-sample k8s-sample
+$ docker exec -it k8s-sample-container bash
+```
