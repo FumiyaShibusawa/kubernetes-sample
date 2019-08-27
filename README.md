@@ -1,6 +1,6 @@
 # Kubernetes-sample
 
-This is a sample repo where I play around Kubernetes with a simple Rails application on Docker container.
+This is a sample repo where I play around with Kubernetes with a simple Rails application on Docker container.
 
 ## Set up
 
